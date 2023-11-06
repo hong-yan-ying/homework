@@ -1,0 +1,13 @@
+int main()
+{
+	int arr[] = { 9,3,4,6,5,2,1,0 };
+	//arr是数组，对数组进行传参，实际上传过去的是数组首元素地址
+	int i = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	bubble_sort(arr,sz);
+	for (i = 0; i < sz; i++)
+	{
+		printf(" %d", arr[i]);
+	}
+	return 0;
+}
